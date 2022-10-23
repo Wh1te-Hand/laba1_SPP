@@ -1,10 +1,11 @@
-using BankAccountNS;
+//using BankAccountNS;
+using laba1_SPP;
 namespace testForLab1
 {
     [TestClass]
-    public class BankTest
+    public class ThreadTests
     {
-        [TestMethod]
+      /*  [TestMethod]
         public void Debit_WithValidAmount_UpdatesBalance()
         {
             // Arrange
@@ -42,6 +43,6 @@ namespace testForLab1
             }
 
             Assert.Fail("The expected exception was not thrown.");
-        }
+        }*/
     }
 }
