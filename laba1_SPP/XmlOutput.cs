@@ -8,7 +8,7 @@ using System.Xml;
 
 namespace laba1_SPP
 {
-    public class OutputResult
+    public class XmlOutput:ISerialize
     {
         public void SaveTraceResult(TextWriter textWriter, TraceResult traceResult)
         {

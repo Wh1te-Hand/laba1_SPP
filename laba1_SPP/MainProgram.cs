@@ -44,21 +44,21 @@ namespace MainProgramTests
         public void WriteTimeXml()
         {
             TraceResult tracerResult = this.Tracer.GetTraceResult();
-            OutputResult xmlSerializer = new OutputResult();
+            XmlOutput xmlSerializer = new XmlOutput();
 
             WriteTimeXmlFile(tracerResult, xmlSerializer);
             WriteTimeXmlConsole(tracerResult, xmlSerializer);
 
         }
 
-        public void WriteTimeXmlConsole(TraceResult tracerResult,OutputResult xmlSerializer)
+        public void WriteTimeXmlConsole(TraceResult tracerResult, XmlOutput xmlSerializer)
         {
             xmlSerializer.SaveTraceResult(Console.Out, tracerResult);
             Console.WriteLine();
             Console.WriteLine();
         }
 
-        public void WriteTimeXmlFile(TraceResult tracerResult, OutputResult xmlSerializer)
+        public void WriteTimeXmlFile(TraceResult tracerResult, XmlOutput xmlSerializer)
         {
             string pathToSave = System.IO.Path.Combine(Directory.GetCurrentDirectory(), "..\\..\\TraceResults\\XmlTraseResult.xml");
             FileStream fileStream = new FileStream(pathToSave, FileMode.Create);
