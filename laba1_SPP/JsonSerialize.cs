@@ -32,7 +32,7 @@ namespace laba1_SPP
             return new JObject
             {
                 { "id", threadTracerResult.Id },
-                { "time", threadTracerResult.Time.Milliseconds + "ms"},
+                { "time",threadTracerResult.Time.Seconds+"."+ threadTracerResult.Time.Milliseconds + "ms"},
                 { "methods", new JArray(lFirstLvlMethods) }
             };
         }

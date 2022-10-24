@@ -27,7 +27,7 @@ namespace laba1_SPP
         {
             return new XElement("thread",
                 new XAttribute("id", threadTracer.Id),
-                new XAttribute("time", threadTracer.Time.Milliseconds + "ms"),
+                new XAttribute("time", threadTracer.Time.Seconds+ "." + threadTracer.Time.Milliseconds+ "ms"),
                 from methodTracerResult in threadTracer.lFirstLvlMethodTracersResult
                 select SaveMethod(methodTracerResult)
                 );

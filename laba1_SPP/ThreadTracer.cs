@@ -44,6 +44,7 @@ namespace laba1_SPP
             {
                 lFirstLvlMethodTracers.Add(lastUnstoppedMethodTracer);
                 Time += lastUnstoppedMethodTracer.Time;
+              //  Time.Add(lastUnstoppedMethodTracer.Time);
             }
         }
     }

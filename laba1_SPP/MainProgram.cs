@@ -9,6 +9,7 @@ namespace MainProgramTests
     
     public class MainProgram
     {
+        const int size = 2000;
 
         public Tracer Tracer { get; set; }
 
@@ -32,14 +33,63 @@ namespace MainProgramTests
         public void TestMethod_1()
         {
             this.Tracer.StartTrace();
-            Thread.Sleep(100);
+   //         Thread.Sleep(250);
+            int[,] mass = new int[size, size];
+            for (int i = 0; i < size; i++)
+            {
+                for (int j = 0; j < size; j++)
+                {
+                    Random random = new Random();
+                    mass[i, j] = random.Next(0, 2);
+                }
+            }
+            TestMethod_1_1(mass);
             this.Tracer.StopTrace();
         }
+        public void TestMethod_1_1(int[,] mass)
+        {
+            this.Tracer.StartTrace();
+            int sum = 0;
+            for (int i = 0; i < mass.GetLength(0); i++)
+            {
+                for (int j=0;j<mass.GetLength(1);j++)
+                {
+                    sum+=mass[i,j];
+                }
+            }
+            Console.WriteLine(sum);
+            this.Tracer.StopTrace();
+        }
+
         public void TestMethod_2()
         {
             this.Tracer.StartTrace();
-            Thread.Sleep(200);
+            int[,] mass = new int[size, size];
+            for (int i = 0; i < size; i++)
+            {
+                for (int j = 0; j < size; j++)
+                {
+                    Random random = new Random();
+                    mass[i, j] = random.Next(0, 2);
+                }
+            }
+            TestMethod_2_1(mass);
             this.Tracer.StopTrace();
+        }
+        public void TestMethod_2_1(int[,] mass)
+        {
+            this.Tracer.StartTrace();
+            int sum = 0;
+            for (int i = 0; i < mass.GetLength(0); i++)
+            {
+                for (int j = 0; j < mass.GetLength(1); j++)
+                {
+                    sum += mass[j, i];
+                }
+            }
+            Console.WriteLine(sum);
+            this.Tracer.StopTrace();
+
         }
 
         public void WriteTimeXml()
