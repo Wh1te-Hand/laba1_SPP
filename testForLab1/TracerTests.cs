@@ -1,5 +1,5 @@
 //using BankAccountNS;
-using laba1_SPP;
+using TracerLibrary;
 namespace testForLab1
 {
     [TestClass]

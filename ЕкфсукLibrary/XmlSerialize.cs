@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using System.Xml.Linq;
 using System.Xml;
 
-namespace laba1_SPP
+namespace TracerLibrary
 {
     public class XmlSerialize:ISerialize
     {

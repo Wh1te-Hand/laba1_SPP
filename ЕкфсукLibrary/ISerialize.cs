@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace laba1_SPP
+namespace TracerLibrary
 {
-    internal interface ISerialize
+    public interface ISerialize
     {
         void SaveTraceResult(TextWriter textWriter, TraceResult traceResult);
     }

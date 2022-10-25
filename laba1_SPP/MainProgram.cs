@@ -1,5 +1,5 @@
 ﻿
-using laba1_SPP;
+using TracerLibrary;
 using System;
 using System.Diagnostics;
 

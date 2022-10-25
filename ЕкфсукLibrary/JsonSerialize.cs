@@ -8,7 +8,7 @@ using System.Xml;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 
-namespace laba1_SPP
+namespace TracerLibrary
 {
     public class JsonSerialize:ISerialize
     {
