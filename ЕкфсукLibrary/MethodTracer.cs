@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace laba1_SPP
+namespace TracerLibrary
 {
     public class MethodTracer
     {
