@@ -57,7 +57,7 @@ namespace MainProgramTests
                     sum+=mass[i,j];
                 }
             }
-            Console.WriteLine(sum);
+          //  Console.WriteLine(sum);
             this.Tracer.StopTrace();
         }
 
@@ -87,7 +87,7 @@ namespace MainProgramTests
                     sum += mass[j, i];
                 }
             }
-            Console.WriteLine(sum);
+           // Console.WriteLine(sum);
             this.Tracer.StopTrace();
 
         }
